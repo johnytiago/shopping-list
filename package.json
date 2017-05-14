@@ -10,7 +10,10 @@
   "author": "johnytiago <joaosao10@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "handlebars": "^4.0.8",
     "hapi": "^16.1.1",
-    "nodemon": "^1.11.0"
+    "inert": "^4.2.0",
+    "nodemon": "^1.11.0",
+    "vision": "^4.1.1"
   }
 }
