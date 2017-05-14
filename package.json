@@ -1,0 +1,16 @@
+{
+  "name": "shopping-list",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js -e *"
+  },
+  "repository": {},
+  "author": "johnytiago <joaosao10@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^16.1.1",
+    "nodemon": "^1.11.0"
+  }
+}
