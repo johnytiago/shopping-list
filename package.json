@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js -e *"
+    "dev": "nodemon index.js -e css,html,js"
   },
   "repository": {},
   "author": "johnytiago <joaosao10@gmail.com>",

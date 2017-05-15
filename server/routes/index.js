@@ -7,11 +7,28 @@ module.exports = [
     }
   },
   {
+    method: 'POST',
+    path: '/',
+    handler: function( req, reply ){
+      console.log(req);
+      reply().code(201);
+    }
+  },
+  {
     method: 'GET',
-    path: '/{param}',
+    path: '/js/{param*}',
     handler: {
       directory: {
-        path: 'public/'
+        path: 'public/js/'
+      }
+    }
+  },
+  {
+    method: 'GET',
+    path: '/css/{param*}',
+    handler: {
+      directory: {
+        path: 'public/css/'
       }
     }
   }
