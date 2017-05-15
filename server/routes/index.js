@@ -1,3 +1,5 @@
+var list = [];
+
 module.exports = [
   {
     method: 'GET',
@@ -8,9 +10,11 @@ module.exports = [
   },
   {
     method: 'POST',
-    path: '/',
+    path: '/item',
     handler: function( req, reply ){
-      console.log(req);
+      const item = req.payload.item;
+      console.log("Received an item: " + item)
+      list.push(item)
       reply().code(201);
     }
   },
