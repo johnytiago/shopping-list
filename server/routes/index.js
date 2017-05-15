@@ -14,7 +14,10 @@ module.exports = [
     handler: function( req, reply ){
       const item = req.payload.item;
       console.log("Received an item: " + item)
-      list.push(item)
+      list.push({
+        item,
+        done: false
+      })
       reply().code(201);
     }
   },
