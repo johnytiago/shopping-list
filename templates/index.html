@@ -5,21 +5,25 @@
     </div>
   </div>
 
-  <div class="row">
-    <ul class="shopping-list">
-    </ul>
+  <div class="row justify-content-center">
+    <div class="col-4">
+      <ul class="shopping-list">
+      </ul>
+    </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-offset-4 col-md-4">
+  <div class="row justify-content-center">
+    <div class="col-4">
       <form class="form-inline">
-        <div class="col-md-10">
+        <div class="col-9">
           <div class="form-group">
             <!--<label for="itemName" class="sr-only">Item</label>-->
             <input type="text" class="form-control" id="itemName" placeholder="item name">
           </div>
         </div>
-        <button onclick="addToList()" class="btn btn-default">Add</button>
+        <div class="col-3">
+          <button id="add" class="btn btn-default">Add</button>
+        </div>
       </form>
     </div>
   </div>
