@@ -5,7 +5,7 @@ module.exports = [
     method: 'GET',
     path: '/',
     handler: function( req, reply ){
-      reply.view("index");
+      reply.view("index", {item: list});
     }
   },
   {
@@ -14,11 +14,8 @@ module.exports = [
     handler: function( req, reply ){
       const item = req.payload.item;
       console.log("Received an item: " + item)
-      list.push({
-        item,
-        done: false
-      })
-      reply().code(201);
+      list.push( item )
+      reply().code(200);
     }
   },
   {

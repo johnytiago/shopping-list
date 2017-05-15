@@ -8,6 +8,9 @@
   <div class="row justify-content-center">
     <div class="col-4">
       <ul class="shopping-list">
+        {{#each item}}
+          {{> shoppingItem this }}
+        {{/each}}
       </ul>
     </div>
   </div>

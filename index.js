@@ -21,6 +21,7 @@ server.register([Inert, Vision], (err) => {
       relativeTo: __dirname,
       path: './templates',
       layoutPath: './templates/layout',
+      partialsPath: './templates',
       layout: 'default'
     });
 

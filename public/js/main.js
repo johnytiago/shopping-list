@@ -22,16 +22,22 @@ function addToList(event){
     )
   );
 
-  $("ul.shopping-list").append(li);
-
   // Send data to server
+  var myHeaders = new Headers({
+    "Content-Type": "application/json",
+  })
+
   fetch("/item", {
     method: "POST",
-    body: JSON.stringify({ item: item })
+    headers: myHeaders,
+    body: JSON.stringify({ 
+      item: item
+    })
   })
   .then( function(response) {
     if (response.ok){
       console.log(response)
+      $("#itemName").val("")
     }
   })
 }
